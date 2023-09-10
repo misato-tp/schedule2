@@ -23,10 +23,10 @@
       <tr>
         <td><%= event.id %></td>
         <td><%= event.title %></td>
-        <td><%= event.start_date %></td>
-        <td><%= event.end_date %></td>
+        <td><%= event.start_date.to_s(:datetime_jp) %></td>
+        <td><%= event.end_date.to_s(:datetime_jp) %></td>
         <td><%= event.all_day ? '○' :''%></td>
-        <td><%= event.updated_at.to_s(:datetime_jp) %></td>
+        <td><%= event.updated_at.to_s(:datetime) %></td>
         <td>
          <%= link_to "参照", event %>
         </td>
