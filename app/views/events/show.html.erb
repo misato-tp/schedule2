@@ -1,0 +1,25 @@
+<div>
+  <ul>
+    <li><%= link_to "← 一覧に戻る", :events %></li>
+  </ul>
+</div>
+
+<h3><%= @event.title %></h3>
+<table>
+  <tr>
+    <th>開始日</th>
+    <td><%= @event.start_date %></td>
+  </tr>
+  <tr>
+    <th>終了日</th>
+    <td><%= @event.end_date %></td>
+  </tr>
+  <tr>
+    <th>終日</th>
+    <td><%= @event.all_day ? '○' :''%></td>
+  </tr>
+  <tr>
+    <th>スケジュールメモ</th>
+    <td><%= @event.memo %></td>
+  </tr>
+</table>
